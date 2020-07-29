@@ -1,5 +1,5 @@
 {
-  "name": "burger-picker",
+  "name": "burger_picker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rad-a/burger-picker.git"
+    "url": "git+https://github.com/rad-a/burger_picker.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rad-a/burger-picker/issues"
+    "url": "https://github.com/rad-a/burger_picker/issues"
   },
-  "homepage": "https://github.com/rad-a/burger-picker#readme",
+  "homepage": "https://github.com/rad-a/burger_picker#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",

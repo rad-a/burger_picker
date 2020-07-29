@@ -33,8 +33,7 @@ router.post("/burgers", (req, res) => {
 });
 
 router.put("/burgers/:id", (req, res) => {
-
-  console.log("LOGGING ID FOR TESTING" + req.params.id)
+  let condition = `id = ${req.params.id}`;
 
   console.log("condition", condition);
 

@@ -36,7 +36,7 @@
           <div class="col-10 offset-1 col-lg-8 offset-lg-2">
             <form class="create-form">
               <div class="form-group text-left">
-                <label for="burger_input"><strong>Burger name:</strong></label>
+                <label for="burger_input"><strong>Burger name to add:</strong></label>
                 <div class="input-group input-group-sm">
                   <input type="text" class="form-control" id="burger_input" placeholder="" value="" required="">
                   <div class="input-group-append">
@@ -60,8 +60,10 @@
   <div class="row burger-row">
     <div class="col-md-6" id="available">
       <div class="burger-div rounded-sm">
-        <h2 class="text-center">Available burgers</h2>
-
+        <div class="burger-div-header">
+          <h2 class="text-center">Available burgers</h2>
+          <p class="text-center">(Click the cutlery icon to eat a burger!)</p>
+        </div>
         <ul>
           {{#each burgers}}
           {{#unless this.devoured}}
@@ -82,9 +84,9 @@
 
     <div class="col-md-6" id="devoured">
       <div class="burger-div rounded-lg">
-
-        <h2 class="text-center">Devoured burgers</h2>
-
+        <div class="burger-div-header">
+          <h2 class="text-center">Devoured burgers</h2>
+        </div>
         <ul>
           {{#each burgers}}
           {{#if this.devoured}}

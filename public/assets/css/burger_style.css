@@ -62,8 +62,10 @@ main {
   padding: 1rem;
 }
 
-.burger-div h2 {
+.burger-div-header {
   padding-bottom: 1.5rem;
+}
+.burger-div h2 {
   font-family: "Chewy", cursive;
 }
 
