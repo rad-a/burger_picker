@@ -1,0 +1,114 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Eat-Da-Burger</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/rad-a/burger-picker" target="_blank">GitHub</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="https://rad-a.github.io/08_portfolio/" target="_blank">Portfolio</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<main class="container">
+  <!-- Header area that holds header text and input form-->
+  <div class="jumbotron">
+    <div class="row app_header">
+      <div class="col-md-6 text-center">
+        <img class="img-fluid" src="/assets/img/veg_burger.png" alt="veggie burger" />
+      </div>
+
+      <div class="col-md-6 text-center">
+        <h1 class="main_header">Eat-Da-Burger!</h1>
+        <h5>Add a burger, devour a burger</h5>
+        <div class="row add_burger">
+
+          <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+            <form class="create-form">
+              <div class="form-group text-left">
+                <label for="burger_input"><strong>Burger name:</strong></label>
+                <div class="input-group input-group-sm">
+                  <input type="text" class="form-control" id="burger_input" placeholder="" value="" required="">
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-success btn-sm" id="submit">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="row burger-row">
+    <div class="col-md-6" id="available">
+      <div class="burger-div rounded-sm">
+        <h2 class="text-center">Available burgers</h2>
+
+        <ul>
+          {{#each burgers}}
+          {{#unless this.devoured}}
+          <li>
+            {{this.id}}. {{this.burger_name}}
+
+            <button type="button" class="btn btn-primary btn-sm eat_burger" data-id="{{id}}">
+              <i class="fa fa-cutlery" aria-hidden="true"></i>
+            </button>
+
+          </li>
+
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6" id="devoured">
+      <div class="burger-div rounded-lg">
+
+        <h2 class="text-center">Devoured burgers</h2>
+
+        <ul>
+          {{#each burgers}}
+          {{#if this.devoured}}
+          <li>
+            <input type="text" placeholder="{{this.id}}. {{burger_name}}" disabled />
+          </li>
+
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+</main>
+</div>
+
+<footer class="footer text-center">
+
+  <div class="container">
+    <small>2020 ©
+      <a href="https://rad-a.github.io/08_portfolio/">Rachael Adu</a></small>
+  </div>
+  </div>
+</footer>
