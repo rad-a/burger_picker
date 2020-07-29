@@ -35,7 +35,7 @@ To use this application, navigate to the [live link](https://shrouded-beyond-017
   3. ### To add and devour a burger, combine steps 1 and two above
 
 ## Contributions
-To contribute to the project, please [contact me](https://rad-a.github.io/08_portfolio/) or fork this repository
+To contribute to the project, please [contact me](https://rad-a.github.io/portfolio/) or fork this repository
 
 ## Application Image 
 ![burger-app](public/assets/img/burgerApp-img.jpg)
