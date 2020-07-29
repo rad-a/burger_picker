@@ -20,7 +20,7 @@ A burger logger app created using MySQL, Node, Express, Handlebars and a ORM.
 ## Application Links
 [Heroku](https://shrouded-beyond-01705.herokuapp.com/)
 
-[Portfolio Link](https://rad-a.github.io/08_portfolio/)
+[Portfolio Link](https://rad-a.github.io/portfolio/)
 
 ## Usage
 
@@ -41,6 +41,6 @@ To contribute to the project, please [contact me](https://rad-a.github.io/08_por
 ![burger-app](public/assets/img/burgerApp-img.jpg)
 
 ## Questions
-For questions and suggestions, please [contact me](https://rad-a.github.io/08_portfolio/)
+For questions and suggestions, please [contact me](https://rad-a.github.io/portfolio/)
 
 
