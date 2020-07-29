@@ -5,7 +5,14 @@ const router = express.Router();
 
 const burger = require("../models/burger.js");
 
-//Route to index
+// ==== Create routes and define logic for each route ====
+
+// get route -> index
+router.get("/", function (req, res) {
+	res.redirect("/burgers");
+});
+
+
 router.get("/burgers", (req, res) => {
   burger.selectAll(function (burgerData) {
     let hbsObject = { burgers: burgerData };
